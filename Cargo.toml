@@ -1,0 +1,15 @@
+[package]
+name = "xin"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+serde = ["dep:serde"]
+
+[dependencies]
+clap = { version = "4.3.10", features = ["derive"] }
+serde = { version = "1.0.164", features = ["derive"], optional = true }
+thiserror = "1.0.38"
+
+[dev-dependencies]
+tempfile = "3.4.0"
