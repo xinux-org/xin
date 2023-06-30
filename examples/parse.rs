@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use xin::NixConfig;
+use xin::parser::NixConfig;
 
 fn main() {
     let file = std::env::args()

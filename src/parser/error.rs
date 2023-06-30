@@ -1,9 +1,5 @@
-use std::{
-    collections::HashMap,
-    path::{Path, PathBuf},
-};
+use std::path::PathBuf;
 use thiserror::Error;
-
 
 /// An error that occurred while attempting to parse a `nix.conf` [`Path`] or
 /// [`String`].
