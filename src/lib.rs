@@ -1,1 +1,41 @@
-pub mod parser;
+use std::path::Path;
+
+lazy_static::lazy_static! {
+    pub static ref PKGSTYLE: owo_colors::Style = owo_colors::Style::new()
+        .bright_purple()
+        .bold();
+    pub static ref VERSIONSTYLE: owo_colors::Style = owo_colors::Style::new()
+        .bright_blue();
+    pub static ref ERRORSTYLE: owo_colors::Style = owo_colors::Style::new()
+        .bright_red()
+        .bold();
+    pub static ref WARNINGSTYLE: owo_colors::Style = owo_colors::Style::new()
+        .bright_yellow()
+        .bold();
+}
+
+pub mod search;
+
+pub fn is_system_configured() -> bool {
+    if let Ok(config) = libxinux::config::configfile::get_config() {
+        config.systemconfig.is_some()
+    } else {
+        false
+    }
+}
+
+pub fn is_home_configured() -> bool {
+    if let Ok(config) = libxinux::config::configfile::get_config() {
+        config.homeconfig.is_some()
+    } else {
+        false
+    }
+}
+
+pub fn is_profile_configured() -> bool {
+    if let Ok(home) = std::env::var("HOME") {
+        Path::new(&format!("{}/.nix-profile/manifest.json", home)).exists()
+    } else {
+        false
+    }
+}

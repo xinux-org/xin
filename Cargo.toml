@@ -2,14 +2,18 @@
 name = "xin"
 version = "0.1.0"
 edition = "2021"
+default-run = "xin"
 
-[features]
-serde = ["dep:serde"]
+[[bin]]
+name = "xin"
+path = "src/main.rs"
+
 
 [dependencies]
-clap = { version = "4.3.10", features = ["derive"] }
-serde = { version = "1.0.164", features = ["derive"], optional = true }
-thiserror = "1.0.38"
-
-[dev-dependencies]
-tempfile = "3.4.0"
+anyhow = "1"
+clap = { version = "4.5", features = ["derive"] }
+lazy_static = "1.5"
+libxinux = "1.0.0"
+owo-colors = { version = "4", features = ["supports-colors"] }
+pretty_env_logger = "0.5"
+tokio = { version = "1", features = ["full"] }
