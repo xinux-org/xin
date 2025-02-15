@@ -13,7 +13,7 @@ path = "src/main.rs"
 anyhow = "1"
 clap = { version = "4.5", features = ["derive"] }
 lazy_static = "1.5"
-libxinux = "1.0.0"
+libxinux = "1.0.1"
 owo-colors = { version = "4", features = ["supports-colors"] }
 pretty_env_logger = "0.5"
 tokio = { version = "1", features = ["full"] }

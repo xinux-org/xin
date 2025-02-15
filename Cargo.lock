@@ -1247,9 +1247,9 @@ dependencies = [
 
 [[package]]
 name = "libxinux"
-version = "1.0.0"
+version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70dad5cc43bf3c42f3c47d4da49f2933b4503d7019849b1caeacdc25e6c46a0c"
+checksum = "7914e29df90fc45c282a746ca5161391fad13a3cc36f5e01431505928785175e"
 dependencies = [
  "anyhow",
  "brotli",
