@@ -3,6 +3,10 @@ name = "xin"
 version = "0.1.0"
 edition = "2021"
 default-run = "xin"
+authors = [
+  "Sokhibjon Orzikulov <sakhib@orzklv.uz>",
+  "Victor Fuentes <vlinkz@snowflakeos.org>",
+]
 
 [[bin]]
 name = "xin"
