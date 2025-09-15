@@ -1,1 +1,8 @@
 /target
+/.direnv
+/.vscode
+/build
+/builddir
+/out
+/src/config.rs
+result
