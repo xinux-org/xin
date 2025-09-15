@@ -1,0 +1,16 @@
+name: "Build CI"
+
+on: [push, pull_request]
+
+jobs:
+  flake-check:
+      runs-on: self-hosted
+      steps:
+        - name: Clone the repository
+          uses: actions/checkout@v4
+
+        - name: Flake check
+          run: nix flake check --system x86_64-linux
+
+        - name: Build the package
+          run: nix build . --show-trace
