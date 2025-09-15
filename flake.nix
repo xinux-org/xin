@@ -2,7 +2,7 @@
   description = "An operating system manager for Xinux";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:xinux-org/nixpkgs/nixos-unstable";
     xinux-lib = {
       url = "github:xinux-org/lib";
       inputs.nixpkgs.follows = "nixpkgs";
