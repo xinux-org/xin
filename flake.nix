@@ -20,5 +20,6 @@
       alias.packages.default = "xin";
       alias.shells.default = "xin";
       src = ./.;
+      hydraJobs = inputs.self.packages.x86_64-linux;
     };
 }
