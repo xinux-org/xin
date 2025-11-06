@@ -3,11 +3,11 @@
     "flake-compat": {
       "flake": false,
       "locked": {
-        "lastModified": 1733328505,
-        "narHash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=",
+        "lastModified": 1747046372,
+        "narHash": "sha256-CIVLLkVgvHYbgI2UpXvIIBJ12HWgX+fjA8Xf8PUmqCY=",
         "owner": "edolstra",
         "repo": "flake-compat",
-        "rev": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
+        "rev": "9100a0f413b0c601e0533d1d94ffd501ce2e7885",
         "type": "github"
       },
       "original": {
@@ -114,11 +114,11 @@
         "xinux-lib": "xinux-lib"
       },
       "locked": {
-        "lastModified": 1757948979,
-        "narHash": "sha256-OhtXKLd4BBVnEvhwVq6J4mlSGqx5XVPvWrGhT472b0I=",
+        "lastModified": 1762429957,
+        "narHash": "sha256-bj6ICyTcwvm4OHsvX+SQDBsPi3dQ72Z5mV1fPSoWrBI=",
         "owner": "xinux-org",
         "repo": "libxinux",
-        "rev": "43fdd3058de6f1094a5df222248415f880e50741",
+        "rev": "4bec8ba23f742ca5b52ea886fc151f2ac7b99d66",
         "type": "github"
       },
       "original": {
@@ -129,16 +129,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1757810152,
-        "narHash": "sha256-Vp9K5ol6h0J90jG7Rm4RWZsCB3x7v5VPx588TQ1dkfs=",
+        "lastModified": 1762111121,
+        "narHash": "sha256-4vhDuZ7OZaZmKKrnDpxLZZpGIJvAeMtK6FKLJYUtAdw=",
         "owner": "xinux-org",
         "repo": "nixpkgs",
-        "rev": "9a094440e02a699be5c57453a092a8baf569bdad",
+        "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
         "type": "github"
       },
       "original": {
         "owner": "xinux-org",
-        "ref": "nixos-25.05",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -190,11 +190,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1757920370,
-        "narHash": "sha256-1nOL0AzPB7bjTaGpXeHAnh8eDLcjIOhbqCDRQOPPlW8=",
+        "lastModified": 1758177889,
+        "narHash": "sha256-1OJnZZsHxZo5eNgPJkKQOS45SYMLDHt4EB8HRSXRYpM=",
         "owner": "xinux-org",
         "repo": "lib",
-        "rev": "aa5224d48ebc0262e007ef3e34b9a4da7906dce5",
+        "rev": "3b050e9f048af47e34165b54e5e13b333810f071",
         "type": "github"
       },
       "original": {
