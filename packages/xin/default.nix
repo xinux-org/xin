@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage {
     inputs.libxinux.packages.${system}.libxinux-helper
     openssl
     sqlite
-  ]) ++ lib.optionals stdenv.isDarwin [ darwin.apple_sdk.frameworks.Security ];
+  ]);
 
   doCheck = false;
 
