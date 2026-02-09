@@ -8,7 +8,6 @@
   rustPlatform,
   sqlite,
   stdenv,
-  system,
 }:
 rustPlatform.buildRustPackage {
   pname = "xin";
@@ -25,7 +24,7 @@ rustPlatform.buildRustPackage {
     pkg-config
   ];
   buildInputs = ([
-    inputs.libxinux.packages.${system}.libxinux-helper
+    inputs.libxinux.packages.${stdenv.hostPlatform.system}.libxinux-helper
     openssl
     sqlite
   ]);
@@ -33,6 +32,6 @@ rustPlatform.buildRustPackage {
   doCheck = false;
 
   postInstall = ''
-    wrapProgram $out/bin/xin --prefix PATH : '${"${inputs.libxinux.packages.${system}.libxinux-helper}/libexec:${inputs.libxinux.packages.${system}.libxinux-helper}/share/libxinux/triggers"}'
+    wrapProgram $out/bin/xin --prefix PATH : '${"${inputs.libxinux.packages.${stdenv.hostPlatform.system}.libxinux-helper}/libexec:${inputs.libxinux.packages.${stdenv.hostPlatform.system}.libxinux-helper}/share/libxinux/triggers"}'
   '';
 }

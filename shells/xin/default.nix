@@ -14,6 +14,8 @@
   rustfmt,
   sqlite,
   stdenv,
+  nixd,
+  nixfmt
 }:
 
 mkShell {
@@ -28,6 +30,8 @@ mkShell {
       rustc
       rustfmt
       sqlite
+      nixd
+      nixfmt
     ]
     ++ lib.optionals stdenv.isDarwin ([
       darwin.apple_sdk.frameworks.Security
