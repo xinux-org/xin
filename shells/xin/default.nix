@@ -15,27 +15,26 @@
   sqlite,
   stdenv,
   nixd,
-  nixfmt
+  nixfmt,
 }:
 
 mkShell {
-  nativeBuildInputs =
-    [
-      cargo
-      clippy
-      openssl
-      pkg-config
-      polkit
-      rust-analyzer
-      rustc
-      rustfmt
-      sqlite
-      nixd
-      nixfmt
-    ]
-    ++ lib.optionals stdenv.isDarwin ([
-      darwin.apple_sdk.frameworks.Security
-      libiconv
-    ]);
+  nativeBuildInputs = [
+    cargo
+    clippy
+    openssl
+    pkg-config
+    polkit
+    rust-analyzer
+    rustc
+    rustfmt
+    sqlite
+    nixd
+    nixfmt
+  ]
+  ++ lib.optionals stdenv.isDarwin ([
+    darwin.apple_sdk.frameworks.Security
+    libiconv
+  ]);
   RUST_SRC_PATH = "${rust.packages.stable.rustPlatform.rustLibSrc}";
 }
